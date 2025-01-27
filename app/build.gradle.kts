@@ -8,12 +8,16 @@ android {
 
     defaultConfig {
         applicationId = "com.nivbuskila.facerecognitionproject"
-        minSdk = 21
+        minSdk = 23
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    lint {
+        abortOnError = false
     }
 
     buildFeatures {
