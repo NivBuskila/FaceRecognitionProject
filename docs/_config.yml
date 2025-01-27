@@ -1,0 +1,43 @@
+remote_theme: pages-themes/cayman@v0.2.0
+plugins:
+  - jekyll-remote-theme
+  - jekyll-relative-links
+
+# Site Settings
+title: Face Recognition SDK
+description: A comprehensive face recognition solution for Android applications
+show_downloads: true
+google_analytics: # [Optional] Add your Google Analytics ID here
+
+# Theme Customization
+colors:
+  header: "#159957"
+  gradient_left: "#155799"
+  gradient_right: "#159957"
+
+# Navigation
+nav:
+  - title: Home
+    url: /
+  - title: API Documentation
+    url: /api
+  - title: SDK Guide
+    url: /sdk
+  - title: Example App
+    url: /example
+
+# Build settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+# Exclude files from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+
+# Repository information
+repository: NivBuskila/FaceRecognitionProject
