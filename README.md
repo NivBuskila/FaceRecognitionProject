@@ -4,14 +4,14 @@ Face Recognition library for Android applications with a demo application showca
 
 ## GitHub Pages
 
-live at [https://nivbuskila.github.io/FaceRecognitionProject/](https://nivbuskila.github.io/FaceRecognitionProject/)
-
+Live documentation available at [https://nivbuskila.github.io/FaceRecognitionProject/](https://nivbuskila.github.io/FaceRecognitionProject/)
 
 ## Overview
 
-This project consists of two main components:
+This project consists of three main components:
 1. An Android library (`facerecognition`) that provides face recognition capabilities
-2. A sample Android application (`app`) demonstrating the library's usage
+2. A backend service powered by AWS Rekognition
+3. A sample Android application (`app`) demonstrating the library's usage
 
 ## Features
 
@@ -31,17 +31,25 @@ This project consists of two main components:
 ## Getting Started
 
 ### Prerequisites
+
+#### Android Requirements
 - Android Studio Arctic Fox or newer
 - Android SDK 21 or higher
 - Camera-enabled Android device/emulator
+
+#### Backend Requirements
+- Python 3.8+
+- MongoDB 4.4+
+- AWS account with Rekognition access
+- Redis 6.0+ (optional, for caching)
 
 ### Installation
 
 1. Add JitPack repository to your build file. Add it in your root build.gradle at the end of repositories:
 ```gradle
-allprojects {
+dependencyResolutionManagement {
     repositories {
-        maven { url 'https://jitpack.io' }
+        maven { url = uri("https://jitpack.io") }
     }
 }
 ```
@@ -49,7 +57,7 @@ allprojects {
 2. Add the dependency:
 ```gradle
 dependencies {
-    implementation 'com.github.NivBuskila/FaceRecognitionProject:Tag'
+    implementation 'com.github.NivBuskila:FaceRecognitionProject:1.0.0'
 }
 ```
 
@@ -82,7 +90,15 @@ For more detailed examples, please check the sample application in the `app` mod
 
 ## Documentation
 
-For detailed documentation, please visit our [GitHub Pages](https://NivBuskila.github.io/FaceRecognitionProject/).
+For detailed documentation, including API reference and implementation guides, please visit our [GitHub Pages](https://NivBuskila.github.io/FaceRecognitionProject/).
+
+## Security
+
+This project implements several security measures:
+- JWT-based authentication
+- Encrypted data transmission
+- Secure credential storage
+- AWS IAM role-based access control
 
 ## Contributing
 
@@ -97,3 +113,5 @@ This project is licensed under the MIT License
 - Thanks to Google ML Kit for face detection capabilities
 - OpenCV for image processing functionalities
 - CameraX for camera implementation
+- AWS Rekognition for face recognition services
+- MongoDB for secure data storage
