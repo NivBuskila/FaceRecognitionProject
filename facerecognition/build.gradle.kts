@@ -68,7 +68,7 @@ afterEvaluate {
     publishing {
         publications {
             register<MavenPublication>("release") {
-                groupId = "com.github.NivBuskila"
+                groupId = "com.github.nivbuskila"
                 artifactId = "face-recognition"
                 version = "1.0.0"
 
