@@ -2,6 +2,11 @@
 
 Face Recognition library for Android applications with a demo application showcasing its usage.
 
+## GitHub Pages
+
+live at [https://nivbuskila.github.io/FaceRecognitionProject/](https://nivbuskila.github.io/FaceRecognitionProject/)
+
+
 ## Overview
 
 This project consists of two main components:
