@@ -49,7 +49,6 @@ dependencies {
     implementation(libs.navigation.ui)
 
     implementation(libs.security.crypto)
-    implementation(project(":facerecognition"))
     implementation(libs.retrofit.core)
     implementation(libs.retrofit.converter.gson)
     implementation(libs.okhttp.logging)
