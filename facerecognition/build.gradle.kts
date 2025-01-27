@@ -24,8 +24,8 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
 
     publishing {
@@ -68,12 +68,31 @@ afterEvaluate {
     publishing {
         publications {
             register<MavenPublication>("release") {
-                groupId = "com.github.nivbuskila"
+                groupId = "com.github.NivBuskila"
                 artifactId = "face-recognition"
                 version = "1.0.0"
 
-                afterEvaluate {
-                    from(components["release"])
+                from(components["release"])
+
+                // Add POM file information
+                pom {
+                    name.set("Face Recognition Library")
+                    description.set("Android Face Recognition Library")
+                    url.set("https://github.com/nivbuskila/FaceRecognitionProject")
+
+                    licenses {
+                        license {
+                            name.set("MIT License")
+                            url.set("https://opensource.org/licenses/MIT")
+                        }
+                    }
+
+                    developers {
+                        developer {
+                            id.set("nivbuskila")
+                            name.set("Niv Buskila")
+                        }
+                    }
                 }
             }
         }
