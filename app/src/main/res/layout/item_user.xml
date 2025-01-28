@@ -55,15 +55,6 @@
                 android:src="@drawable/ic_image"
                 app:tint="@color/design_default_color_primary" />
 
-            <ImageButton
-                android:id="@+id/startDetectionButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="8dp"
-                android:background="?attr/selectableItemBackgroundBorderless"
-                android:padding="8dp"
-                android:src="@drawable/ic_camera"
-                app:tint="@color/design_default_color_primary" />
 
             <ImageButton
                 android:id="@+id/deleteButton"

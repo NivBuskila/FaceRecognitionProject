@@ -27,7 +27,7 @@ public class UsersAdapter extends RecyclerView.Adapter<UsersAdapter.UserViewHold
     public interface OnUserActionListener {
         void onDeleteClick(User user);
         void onViewImageClick(User user);
-        void onStartDetectionClick(User user);
+
     }
 
     public UsersAdapter(OnUserActionListener listener) {
@@ -102,11 +102,6 @@ public class UsersAdapter extends RecyclerView.Adapter<UsersAdapter.UserViewHold
                 }
             });
 
-            binding.startDetectionButton.setOnClickListener(v -> {
-                if (listener != null) {
-                    listener.onStartDetectionClick(user);
-                }
-            });
         }
     }
 }

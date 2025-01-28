@@ -168,11 +168,6 @@ public class UsersFragment extends Fragment implements UsersAdapter.OnUserAction
         }).start();
     }
 
-    @Override
-    public void onStartDetectionClick(User user) {
-        faceRecognition.startFaceDetection(requireContext(), user.getUserId());
-    }
-
     private void showUserImage(String base64Image) {
         MaterialAlertDialogBuilder builder = new MaterialAlertDialogBuilder(requireContext());
         View view = getLayoutInflater().inflate(R.layout.dialog_user_image, null);
