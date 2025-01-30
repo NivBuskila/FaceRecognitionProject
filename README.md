@@ -1,3 +1,5 @@
+[![](https://jitpack.io/v/NivBuskila/FaceRecognitionProject.svg)](https://jitpack.io/#NivBuskila/FaceRecognitionProject)
+
 # Face Recognition Project
 
 Face Recognition library for Android applications with a demo application showcasing its usage.
