@@ -1,5 +1,3 @@
-Based on the provided code and project structure, I'll help create a more accurate README that reflects the actual implementation. Here's a precise README for your Face Recognition Project:
-
 # Face Recognition Project
 
 [![](https://jitpack.io/v/NivBuskila/FaceRecognitionProject.svg)](https://jitpack.io/#NivBuskila/FaceRecognitionProject)
